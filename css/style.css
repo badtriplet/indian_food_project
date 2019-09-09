@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.button {
+  font-size: 38px;
+  color: #304751;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border: none;
+  background: #fff;
+  cursor: pointer; }
+
+.white_link {
+  color: #d4d8d9;
+  text-decoration: none; }
+
+.section {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center; }
+
+.header_section {
+  background: #2a3b40 url(../img/main_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .header_section_logo {
+    width: 30%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center; }
+  .header_section_container {
+    width: 100%;
+    max-width: 1440px;
+    padding-bottom: 223px; }
+  .header_section_nav {
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 224px; }
+    .header_section_nav_links {
+      width: 70%; }
+      .header_section_nav_links__menu_link {
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style-type: none;
+        padding-top: 66px;
+        padding-bottom: 66px; }
+      .header_section_nav_links_list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+  .header_section_content {
+    padding: 120px 110px;
+    font-family: "Raleway", sans-serif;
+    margin: 0 auto;
+    max-width: 762px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); }
+    .header_section_content__description {
+      font-family: "Cookie", cursive;
+      font-size: 104px;
+      color: #304751;
+      cursor: default; }
+    .header_section_content__title {
+      font-size: 76px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #ad6c12;
+      margin-bottom: 34px;
+      cursor: default; }

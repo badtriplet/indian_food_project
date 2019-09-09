@@ -1,0 +1,107 @@
+$bg_color: #2a3b40
+$black_color: #2d2f2a
+$dark_color: #304751
+$light_color: #d4d8d9
+$title_color: #ad6c12
+$cookie: 'Cookie', cursive
+$raleway: 'Raleway', sans-serif
+
+*
+ padding: 0
+ margin: 0
+ box-sizing:border-box
+ 
+
+.button
+ font-size: 38px
+ color: $dark_color
+ text-transform: uppercase
+ padding: 10px 25px
+ border: none
+ background: #fff
+ cursor: pointer
+.white_link
+ color: $light_color
+ text-decoration: none
+
+.section
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ justify-content: center
+ 
+.header
+ &_section
+  background: $bg_color url(../img/main_bg.jpg) no-repeat
+  background-size: cover
+  background-position: center center
+  &_logo
+   width: 30%
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex
+   justify-content: center
+
+  &_container
+   width: 100%
+   max-width: 1440px
+   padding-bottom: 223px
+  &_nav
+   font-family: $raleway
+   font-size: 35px
+   font-weight: 700
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex 
+   justify-content: space-between
+   align-items: center
+   margin-bottom: 224px
+
+   &_links
+    width: 70%
+    &__menu_link
+     text-transform: uppercase
+     text-decoration: none
+     list-style-type: none
+     padding-top: 66px
+     padding-bottom: 66px
+    &_list
+     display: -webkit-flex
+     display: -moz-flex
+     display: -ms-flex
+     display: -o-flex
+     display: flex
+     flex-direction: row
+     justify-content: space-around
+  &_content
+   padding: 120px 110px
+   font-family: $raleway
+   margin: 0 auto
+   max-width: 762px
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex
+   flex-direction: column
+   justify-content: center
+   align-items: center 
+   background: rgba(255, 255, 255, 0.8)
+   &__description
+    font-family: $cookie
+    font-size: 104px
+    color: $dark_color
+    cursor: default
+   &__title
+    font-size: 76px
+    text-transform: uppercase
+    text-align: center
+    color: $title_color
+    margin-bottom: 34px
+    cursor: default
