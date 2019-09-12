@@ -1,10 +1,22 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('autoprefixer', function(done){
+   gulp.src('css/*.css')
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulp.dest("css"));
+
+        done();
+})
 
 gulp.task('sass', function(done) {
     gulp.src("sass/*.sass")
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest("css"))
         .pipe(browserSync.stream());
 
@@ -28,4 +40,4 @@ gulp.task('serve', function(done) {
     done();
 });
 
-gulp.task('default', gulp.series('sass', 'serve'));
+gulp.task('default', gulp.series('sass', 'autoprefixer', 'serve'));
