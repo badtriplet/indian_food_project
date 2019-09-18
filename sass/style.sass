@@ -12,7 +12,7 @@ $raleway: 'Raleway', sans-serif
 *
  padding: 0
  margin: 0
- box-sizing:border-box
+ box-sizing: border-box
  font-family: $raleway
  
 .container
@@ -84,7 +84,7 @@ $raleway: 'Raleway', sans-serif
      flex-direction: row
      justify-content: space-between
   &_content
-   padding: 120px 110px
+   padding: 120px 0px
    font-family: $raleway
    margin: 0 auto
    max-width: 762px
@@ -201,7 +201,193 @@ $raleway: 'Raleway', sans-serif
     flex-direction: row
     max-width: 100%
     justify-content: flex-start
+.plate
+ padding: 90px 0px
+ background: url(../img/plate.jpg) no-repeat
+ background-size: cover
+ background-position: center center
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ justify-content: center
+ &_container
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: center
+  align-items: center
+ &_content
+  padding-top: 55px
+  background: rgba(255,255,255, 0.8)
+  &_title
+   color: $dark_color 
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex  
+   justify-content: center
+   & span
+    font-size: 77px
+    font-family: $cookie
+    text-align: center
+  &_subtitle
+   color: $title_color
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex
+   justify-content: center
+   & span
+    font-family: $raleway
+    font-size: 48px
+    text-transform: uppercase 
+    font-weight: 700
+    text-align: center
+    padding-bottom: 55px
+  &_grid
+   width: 100%
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex
+   justify-content: center
+   flex-wrap: wrap
+   &_img
+    width: 25%
+    height: 275px
+   &_description
+    width: 25%
+    padding: 0 66px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &_title
+     margin-bottom: 37px
+     & span
+      font-size: 18px
+      color: $dark_color
+      text-transform: uppercase
+      font-weight: 700
+    &_subtitle
+     text-align: center
+     margin-bottom: 37px
+     & span
+      font-size: 16px
+      color: $dark_color
+    &_price
+     & span
+      font-size: 16px
+      font-weight: 700
+      color: $dark_color
+.grid_img
+ &_1
+  background: url(../img/grid_1.png) no-repeat
+  background-position: center center
+  background-size: cover
+ &_2
+  background: url(../img/grid_2.png) no-repeat
+  background-position: center center
+  background-size: cover
+ &_3
+  background: url(../img/grid_3.png) no-repeat
+  background-position: center center
+  background-size: cover
+ &_4
+  background: url(../img/grid_4.png) no-repeat
+  background-position: center center
+  background-size: cover
+ &_5
+  background: url(../img/grid_5.png) no-repeat
+  background-position: center center
+  background-size: cover
+ &_6
+  background: url(../img/grid_6.png) no-repeat
+  background-position: center center
+  background-size: cover
+/*cuisine*/
+.cuisine
+ padding: 95px 0
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ justify-content: center
+ background: $light_color
+ background-image: url(../img/left.png), url(../img/right.png)
+ background-size: contain
+ &_container
+  width: 100%
+ &_content
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &_title,
+  &_subtitle,
+  &_nav
+   text-align: center
+  &_title
+   font-size: 29px
+   font-weight: 700
+   margin-bottom: 50px
+   & span
+    color: $dark_color
+  &_subtitle
 
+   font-size: 18px
+   margin-bottom: 50px
+   max-width: 700px
+   & p
+    line-height: 33px
+    color: $dark_color
 
-
+  &_nav
+   & ul
+    list-style-type: none
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    & li
+     padding: 0 30px
+     font-size: 16px
+     font-weight: 700
+     & a
+      color: $dark_color
+      text-decoration: none
+  &_bubbles
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex
+   justify-content: center
+   align-items: center
+   &_bubble
+    height: 32px
+    width: 32px
+    border: 1px solid transparent
+    border-radius: 50%
+    background: $dark_color
+    margin-bottom: 32px
+    margin-right: 8px
 
